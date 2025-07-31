@@ -9,107 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,412</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Firefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,645</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Edge</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">147,739</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">160,796</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,445</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Firefox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">890</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">8,335</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m0">Login</a></td><td rowspan="1">1753030954714</td><td rowspan="1">3356</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m1">Login</a></td><td rowspan="1">1753030961678</td><td rowspan="1">1979</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Edge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m2">init</a></td><td rowspan="1">1753030964970</td><td rowspan="1">147731</td></tr><tr><th colspan="4">Edge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m3">closeT</a></td><td rowspan="1">1753031112706</td><td rowspan="1">0</td></tr><tr><th colspan="4">Edge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m4">Login</a></td><td rowspan="1">1753031112704</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m0">Login</a></td><td rowspan="1">1753298838206</td><td rowspan="1">2757</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Firefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m1">init</a></td><td rowspan="1">1753298841161</td><td rowspan="1">868</td></tr><tr><th colspan="4">Firefox &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m2">closeT</a></td><td rowspan="1">1753298842047</td><td rowspan="1">0</td></tr><tr><th colspan="4">Firefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TestCrossBrowser.Cross_Browser</td><td><a href="#m3">Login</a></td><td rowspan="1">1753298842041</td><td rowspan="1">1</td></tr></tbody>
 </table>
 <h2>Chrome</h2><h3 id="m0">TestCrossBrowser.Cross_Browser#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Firefox</h2><h3 id="m1">TestCrossBrowser.Cross_Browser#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Edge</h2><h3 id="m2">TestCrossBrowser.Cross_Browser#init</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
-	at TestCrossBrowser.Cross_Browser.init(Cross_Browser.java:39)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
-	... 29 more
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.base/java.net.Socket.connect(Socket.java:608)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
-	... 33 more
+<h2>Firefox</h2><h3 id="m1">TestCrossBrowser.Cross_Browser#init</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: &apos;SHOAS&apos;, ip: &apos;192.168.1.68&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:89)
+	at TestCrossBrowser.Cross_Browser.init(Cross_Browser.java:28)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCrossBrowser.Cross_Browser#closeT</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCrossBrowser.Cross_Browser#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
-	at TestCrossBrowser.Cross_Browser.init(Cross_Browser.java:39)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
-	... 29 more
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to https://msedgedriver.azureedge.net:443 [msedgedriver.azureedge.net/143.244.220.150] failed: Connection timed out: connect
-	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.base/java.net.Socket.connect(Socket.java:608)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
-	... 33 more
+<h3 id="m2">TestCrossBrowser.Cross_Browser#closeT</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCrossBrowser.Cross_Browser#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: &apos;SHOAS&apos;, ip: &apos;192.168.1.68&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:89)
+	at TestCrossBrowser.Cross_Browser.init(Cross_Browser.java:28)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
