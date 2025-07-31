@@ -27,6 +27,7 @@ public class Before_AfterTest {
 		driver.findElement(By.id("Email")).sendKeys("dallas@test.com");//Enter user email
 		driver.findElement(By.name("Password")).sendKeys("Dallas12354");//Enter password 
 		driver.findElement(By.xpath("//input[@class='button-1 login-button']")).click();//Click login button
+		driver.findElement(By.xpath("//a[text()='Log out']")).click();
 		
 	}
 	@Test // You are driving
@@ -35,6 +36,7 @@ public class Before_AfterTest {
 		driver.findElement(By.id("Email")).sendKeys("dallas@test.com");//Enter user email
 		driver.findElement(By.name("Password")).sendKeys("Dallas12354");//Enter password 
 		driver.findElement(By.xpath("//input[@class='button-1 login-button']")).click();//Click login button
+		driver.findElement(By.xpath("//a[text()='Log out']")).click();
 		
 	}
 	@AfterTest // Wash car

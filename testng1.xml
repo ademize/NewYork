@@ -3,13 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Chrome">
     <classes>
-      <class name="TestCrossBrowser.Cross_Browser"/>
+      <class name="CrossBrowserTest.NewTest"/>
       <parameter name="browser" value="chrome"></parameter>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="Firefox">
     <classes>
-      <class name="TestCrossBrowser.Cross_Browser"/>
+      <class name="CrossBrowserTest.NewTest"/>
       <parameter name="browser" value="firefox"></parameter>
     </classes>
   </test> <!-- Test -->
